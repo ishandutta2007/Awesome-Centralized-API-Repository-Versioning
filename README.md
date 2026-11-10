@@ -1,6 +1,6 @@
 # Awesome-Centralized-API-Repository-Versioning
 
-# Top Centralized API Repository & Versioning Ecosystem
+## Top Centralized API Repository & Versioning Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on API Artifact Management, Specification Versioning & Developer Catalog Discovery*  
