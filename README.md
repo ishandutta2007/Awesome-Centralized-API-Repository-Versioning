@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Centralized-API-Repository-Versioning/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Centralized-API-Repository-Versioning?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Centralized-API-Repository-Versioning/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Centralized-API-Repository-Versioning?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Centralized-API-Repository-Versioning/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Centralized-API-Repository-Versioning?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -65,51 +65,51 @@ The following SaaS platforms provide centralized hosting, catalog discovery, con
 
 ## 💻 Open-Source GitHub Projects
 
-Explore the leading open-source repositories powering developer portals, schema registries, breaking change detectors, and contract linters. Sorted descending by GitHub star count.
+Explore the leading open-source repositories powering developer portals, schema registries, breaking change detectors, and contract linters. Sorted descending by GitHub Stars_Count.
 
-- **[Backstage](https://github.com/backstage/backstage)** [![GitHub stars](https://img.shields.io/github/stars/backstage/backstage?style=social&color=white)](https://github.com/backstage/backstage/stargazers)  
+- **[Backstage](https://github.com/backstage/backstage)** [![GitHub_Stars](https://img.shields.io/github/stars/backstage/backstage?style=social&color=white)](https://github.com/backstage/backstage/stargazers)  
   CNCF Incubation framework created by Spotify for building developer portals with a centralized software catalog (microservices, libraries, APIs, data pipelines); includes Software Templates, TechDocs ("docs like code"), and an extensive plugin ecosystem for enterprise API discovery and governance.
 
-- **[Scalar](https://github.com/scalar/scalar)** [![GitHub stars](https://img.shields.io/github/stars/scalar/scalar?style=social&color=white)](https://github.com/scalar/scalar/stargazers)  
+- **[Scalar](https://github.com/scalar/scalar)** [![GitHub_Stars](https://img.shields.io/github/stars/scalar/scalar?style=social&color=white)](https://github.com/scalar/scalar/stargazers)  
   Modern open-source developer platform and API reference tool with first-class OpenAPI/Swagger support, interactive API clients, offline capabilities, and dynamic documentation generation.
 
-- **[Buf](https://github.com/bufbuild/buf)** [![GitHub stars](https://img.shields.io/github/stars/bufbuild/buf?style=social&color=white)](https://github.com/bufbuild/buf/stargazers)  
+- **[Buf](https://github.com/bufbuild/buf)** [![GitHub_Stars](https://img.shields.io/github/stars/bufbuild/buf?style=social&color=white)](https://github.com/bufbuild/buf/stargazers)  
   Comprehensive tooling for Protocol Buffers including schema registries, backward-compatibility linting, breaking change detection, and centralized module repository management.
 
-- **[APIs-guru/openapi-directory](https://github.com/APIs-guru/openapi-directory)** [![GitHub stars](https://img.shields.io/github/stars/APIs-guru/openapi-directory?style=social&color=white)](https://github.com/APIs-guru/openapi-directory/stargazers)  
+- **[APIs-guru/openapi-directory](https://github.com/APIs-guru/openapi-directory)** [![GitHub_Stars](https://img.shields.io/github/stars/APIs-guru/openapi-directory?style=social&color=white)](https://github.com/APIs-guru/openapi-directory/stargazers)  
   Community-maintained Wikipedia for Web APIs containing REST definitions in OpenAPI 2.0/3.x format, serving as a public reference catalog for API discovery, version tracking, and schema definitions.
 
-- **[Spectral](https://github.com/stoplightio/spectral)** [![GitHub stars](https://img.shields.io/github/stars/stoplightio/spectral?style=social&color=white)](https://github.com/stoplightio/spectral/stargazers)  
+- **[Spectral](https://github.com/stoplightio/spectral)** [![GitHub_Stars](https://img.shields.io/github/stars/stoplightio/spectral?style=social&color=white)](https://github.com/stoplightio/spectral/stargazers)  
   Flexible JSON/YAML linter for enforcing API style guides and governance across OpenAPI, AsyncAPI, and JSON Schema specifications within CI/CD and Git-based versioning workflows.
 
-- **[Confluent Schema Registry](https://github.com/confluentinc/schema-registry)** [![GitHub stars](https://img.shields.io/github/stars/confluentinc/schema-registry?style=social&color=white)](https://github.com/confluentinc/schema-registry/stargazers)  
+- **[Confluent Schema Registry](https://github.com/confluentinc/schema-registry)** [![GitHub_Stars](https://img.shields.io/github/stars/confluentinc/schema-registry?style=social&color=white)](https://github.com/confluentinc/schema-registry/stargazers)  
   Centralized serving layer for schemas, supporting Apache Avro, JSON Schema, and Protobuf with RESTful interfaces for managing versioned schemas, compatibility rules, and Kafka event validation.
 
-- **[GraphQL Inspector](https://github.com/graphql-hive/graphql-inspector)** [![GitHub stars](https://img.shields.io/github/stars/graphql-hive/graphql-inspector?style=social&color=white)](https://github.com/graphql-hive/graphql-inspector/stargazers)  
+- **[GraphQL Inspector](https://github.com/graphql-hive/graphql-inspector)** [![GitHub_Stars](https://img.shields.io/github/stars/graphql-hive/graphql-inspector?style=social&color=white)](https://github.com/graphql-hive/graphql-inspector/stargazers)  
   Tooling suite for GraphQL schema validation, breaking change detection, schema diffing, and version tracking across Git workflows and deployments.
 
-- **[Optic](https://github.com/opticdev/optic)** [![GitHub stars](https://img.shields.io/github/stars/opticdev/optic?style=social&color=white)](https://github.com/opticdev/optic/stargazers)  
+- **[Optic](https://github.com/opticdev/optic)** [![GitHub_Stars](https://img.shields.io/github/stars/opticdev/optic?style=social&color=white)](https://github.com/opticdev/optic/stargazers)  
   Git-native API governance tool that tracks OpenAPI specification changes, detects breaking changes in PRs, and automatically enforces API design standards.
 
-- **[oasdiff](https://github.com/oasdiff/oasdiff)** [![GitHub stars](https://img.shields.io/github/stars/oasdiff/oasdiff?style=social&color=white)](https://github.com/oasdiff/oasdiff/stargazers)  
+- **[oasdiff](https://github.com/oasdiff/oasdiff)** [![GitHub_Stars](https://img.shields.io/github/stars/oasdiff/oasdiff?style=social&color=white)](https://github.com/oasdiff/oasdiff/stargazers)  
   High-performance OpenAPI 3.0/3.1 diff engine and breaking change detector for verifying API version compatibility and specification evolution in CI/CD pipelines.
 
-- **[vacuum](https://github.com/daveshanley/vacuum)** [![GitHub stars](https://img.shields.io/github/stars/daveshanley/vacuum?style=social&color=white)](https://github.com/daveshanley/vacuum/stargazers)  
+- **[vacuum](https://github.com/daveshanley/vacuum)** [![GitHub_Stars](https://img.shields.io/github/stars/daveshanley/vacuum?style=social&color=white)](https://github.com/daveshanley/vacuum/stargazers)  
   Ultra-fast OpenAPI, Arazzo, AsyncAPI & JSON Schema linter and governance toolkit written in Go, fully compatible with Spectral rulesets.
 
-- **[OpenAPI-Diff](https://github.com/OpenAPITools/openapi-diff)** [![GitHub stars](https://img.shields.io/github/stars/OpenAPITools/openapi-diff?style=social&color=white)](https://github.com/OpenAPITools/openapi-diff/stargazers)  
+- **[OpenAPI-Diff](https://github.com/OpenAPITools/openapi-diff)** [![GitHub_Stars](https://img.shields.io/github/stars/OpenAPITools/openapi-diff?style=social&color=white)](https://github.com/OpenAPITools/openapi-diff/stargazers)  
   Utility for comparing two OpenAPI specifications to identify differences and backward-incompatible changes between API versions.
 
-- **[Apicurio Registry](https://github.com/Apicurio/apicurio-registry)** [![GitHub stars](https://img.shields.io/github/stars/Apicurio/apicurio-registry?style=social&color=white)](https://github.com/Apicurio/apicurio-registry/stargazers)  
+- **[Apicurio Registry](https://github.com/Apicurio/apicurio-registry)** [![GitHub_Stars](https://img.shields.io/github/stars/Apicurio/apicurio-registry?style=social&color=white)](https://github.com/Apicurio/apicurio-registry/stargazers)  
   Production-grade open-source registry for API designs and schemas (OpenAPI, AsyncAPI, Avro, Protobuf, JSON Schema) with compatibility checking, content versioning, and multiple storage backends.
 
-- **[Stencil](https://github.com/raystack/stencil)** [![GitHub stars](https://img.shields.io/github/stars/raystack/stencil?style=social&color=white)](https://github.com/raystack/stencil/stargazers)  
+- **[Stencil](https://github.com/raystack/stencil)** [![GitHub_Stars](https://img.shields.io/github/stars/raystack/stencil?style=social&color=white)](https://github.com/raystack/stencil/stargazers)  
   Dynamic schema registry for managing and validating Protobuf schemas, providing runtime validation, backward compatibility checks, and schema evolution tracking.
 
-- **[Apinf Platform](https://github.com/apinf/platform)** [![GitHub stars](https://img.shields.io/github/stars/apinf/platform?style=social&color=white)](https://github.com/apinf/platform/stargazers)  
+- **[Apinf Platform](https://github.com/apinf/platform)** [![GitHub_Stars](https://img.shields.io/github/stars/apinf/platform?style=social&color=white)](https://github.com/apinf/platform/stargazers)  
   Open-source API management platform with multi-proxy and protocol support, offering an API catalog and developer portal capabilities.
 
-- **[api-versioner](https://github.com/SuperInstance/api-versioner)** [![GitHub stars](https://img.shields.io/github/stars/SuperInstance/api-versioner?style=social&color=white)](https://github.com/SuperInstance/api-versioner/stargazers)  
+- **[api-versioner](https://github.com/SuperInstance/api-versioner)** [![GitHub_Stars](https://img.shields.io/github/stars/SuperInstance/api-versioner?style=social&color=white)](https://github.com/SuperInstance/api-versioner/stargazers)  
   Pure Python library for semantic version parsing, deprecation tracking with sunset dates, version-aware routing, and auto-generated migration guides.
 
 ### 📦 Ecosystem Libraries & Utilities
@@ -175,7 +175,7 @@ We welcome community contributions! To add a new platform, library, or update an
 1. 🍴 **Fork the repository**.
 2. 📝 **Edit `README.md`**:
    - For SaaS products: include official product link, valuation/market tier, verified starting price, and exact free tier/trial limits.
-   - For open-source tools: include GitHub link, social star badge, and accurate 1–2 sentence description.
+   - For open-source tools: include GitHub link, social Stars_Badge, and accurate 1–2 sentence description.
 3. 🚀 **Submit a Pull Request** with a concise description of your additions.
 
 ---
