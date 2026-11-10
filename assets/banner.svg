@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="badge-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#334155" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="orb-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="35" result="blur" />
+    </filter>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+      <circle cx="40" cy="40" r="1" fill="rgba(255, 255, 255, 0.1)" />
+    </pattern>
+
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) scale(1); opacity: 0.25; }
+        50% { transform: translateY(-25px) scale(1.08); opacity: 0.45; }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.6; transform: scale(1.15); }
+      }
+      @keyframes flowLine {
+        0% { stroke-dashoffset: 400; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes badgeDrift1 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes badgeDrift2 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(8px); }
+      }
+      .orb-1 { animation: floatSlow 9s ease-in-out infinite; transform-origin: 200px 100px; }
+      .orb-2 { animation: floatSlow 12s ease-in-out infinite reverse; transform-origin: 1000px 300px; }
+      .pulse-node { animation: pulseGlow 4s ease-in-out infinite; }
+      .stream-line {
+        stroke-dasharray: 12 8;
+        animation: flowLine 15s linear infinite;
+      }
+      .badge-1 { animation: badgeDrift1 6s ease-in-out infinite; }
+      .badge-2 { animation: badgeDrift2 7s ease-in-out infinite; }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+      }
+      .sub-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+      }
+      .mono-text {
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="400" fill="url(#bg-grad)" rx="16" />
+  <rect width="1200" height="400" fill="url(#grid-pattern)" rx="16" />
+
+  <!-- Dynamic Ambient Glowing Orbs in Background -->
+  <g opacity="0.4">
+    <circle class="orb-1" cx="180" cy="120" r="140" fill="#38bdf8" filter="url(#orb-glow)" />
+    <circle class="orb-2" cx="1020" cy="280" r="160" fill="#a855f7" filter="url(#orb-glow)" />
+    <circle class="orb-1" cx="600" cy="360" r="110" fill="#6366f1" filter="url(#orb-glow)" />
+  </g>
+
+  <!-- Flowing Architecture Wave / Connecting Lines (Behind Text) -->
+  <g opacity="0.25">
+    <path class="stream-line" d="M -50 320 C 300 240, 450 380, 750 300 C 950 240, 1100 340, 1250 270" fill="none" stroke="url(#primary-grad)" stroke-width="2.5" />
+    <path class="stream-line" d="M -50 260 C 250 360, 500 220, 800 320 C 1000 380, 1150 260, 1250 310" fill="none" stroke="#818cf8" stroke-width="1.5" stroke-dashoffset="100" />
+  </g>
+
+  <!-- Visual Node Network Dots -->
+  <g opacity="0.35">
+    <circle class="pulse-node" cx="150" cy="310" r="5" fill="#38bdf8" />
+    <circle class="pulse-node" cx="420" cy="285" r="4" fill="#818cf8" />
+    <circle class="pulse-node" cx="750" cy="300" r="6" fill="#c084fc" />
+    <circle class="pulse-node" cx="1050" cy="290" r="5" fill="#38bdf8" />
+  </g>
+
+  <!-- Left Floating Pill Badge (Dynamic decoration behind title area) -->
+  <g class="badge-1" transform="translate(100, 60)" opacity="0.85">
+    <rect width="170" height="36" rx="18" fill="url(#badge-grad)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.2" />
+    <circle cx="20" cy="18" r="6" fill="#38bdf8" />
+    <text x="35" y="23" fill="#e2e8f0" font-size="12" class="mono-text" font-weight="600">v3.1.0 / SemVer</text>
+  </g>
+
+  <!-- Right Floating Pill Badge (Dynamic decoration) -->
+  <g class="badge-2" transform="translate(930, 60)" opacity="0.85">
+    <rect width="180" height="36" rx="18" fill="url(#badge-grad)" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1.2" />
+    <circle cx="20" cy="18" r="6" fill="#c084fc" />
+    <text x="35" y="23" fill="#e2e8f0" font-size="12" class="mono-text" font-weight="600">Schema Registry</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Title, Subtitle, Feature Pills -->
+  <g id="foreground-content">
+    <!-- Super Header Category Tag -->
+    <text x="600" y="115" text-anchor="middle" fill="#38bdf8" font-size="13" class="mono-text" font-weight="700" letter-spacing="3.5">
+      ENTERPRISE ARCHITECTURE &amp; API GOVERNANCE
+    </text>
+
+    <!-- Main Title -->
+    <text x="600" y="175" text-anchor="middle" fill="url(#primary-grad)" font-size="44" class="title-text" filter="url(#glow)">
+      Awesome Centralized API Repository
+    </text>
+    <text x="600" y="225" text-anchor="middle" fill="#ffffff" font-size="34" class="title-text">
+      &amp; Specification Versioning
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="600" y="268" text-anchor="middle" fill="#94a3b8" font-size="16" class="sub-text">
+      Curated Catalog of SaaS Platforms, Self-Hosted Schema Registries &amp; Developer Portals
+    </text>
+
+    <!-- Interactive Feature Badges in Foreground -->
+    <g transform="translate(245, 305)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="155" height="34" rx="17" fill="#0f172a" stroke="rgba(56, 189, 248, 0.5)" stroke-width="1" />
+        <text x="77" y="21" text-anchor="middle" fill="#cbd5e1" font-size="12" class="title-text">⚡ API Registries</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(170, 0)">
+        <rect width="185" height="34" rx="17" fill="#0f172a" stroke="rgba(129, 140, 248, 0.5)" stroke-width="1" />
+        <text x="92" y="21" text-anchor="middle" fill="#cbd5e1" font-size="12" class="title-text">🔄 Contract Versioning</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(370, 0)">
+        <rect width="170" height="34" rx="17" fill="#0f172a" stroke="rgba(192, 132, 252, 0.5)" stroke-width="1" />
+        <text x="85" y="21" text-anchor="middle" fill="#cbd5e1" font-size="12" class="title-text">🌐 Developer Catalogs</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(555, 0)">
+        <rect width="155" height="34" rx="17" fill="#0f172a" stroke="rgba(244, 114, 182, 0.5)" stroke-width="1" />
+        <text x="77" y="21" text-anchor="middle" fill="#cbd5e1" font-size="12" class="title-text">🛡️ Breaking Diffing</text>
+      </g>
+    </g>
+  </g>
+</svg>

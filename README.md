@@ -1,76 +1,89 @@
-# Awesome-Centralized-API-Repository-Versioning
+# Awesome Centralized API Repository & Versioning 🌐 📚
 
-## Top Centralized API Repository & Versioning Ecosystem
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Centralized API Repository and Versioning Banner" width="100%" />
+</p>
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on API Artifact Management, Specification Versioning & Developer Catalog Discovery*  
-**Last updated: March 2026**
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Centralized-API-Repository-Versioning/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Centralized-API-Repository-Versioning?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Centralized-API-Repository-Versioning/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Centralized-API-Repository-Versioning?style=social" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Centralized API Repository & Versioning**. These tools provide a single source of truth for API definitions, schemas, and related artifacts—enabling teams to version specifications, track changes, enforce governance, and discover APIs across an organization.
+---
 
-**Examples** include Postman API Repository, GitHub Enterprise, GitLab, SwaggerHub, Bitbucket, Azure Repos, AWS CodeCommit, Backstage Catalog, Redocly Workspaces, and Stoplight (the category leaders).
+## 🎯 Top Centralized API Repository & Versioning Ecosystem
 
-**Open-source emphasis**: This section highlights every major active project for self-hosted API registries, developer portals with software catalogs, and schema versioning backends—ideal for platform teams, API architects, and developers building transparent, vendor-neutral API governance infrastructure.
+> **Curated Directory of SaaS Platforms & Open-Source Projects for API Artifact Management, Schema Versioning, Breaking Change Detection & Developer Catalog Discovery.**  
+> *Last updated: March 2026*
 
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
+Modern microservice architectures, federated data graphs, and multi-team engineering organizations require a single source of truth for API contracts. This curated resource tracks leading **SaaS platforms** and **open-source solutions** that power centralized API registries, specification versioning (OpenAPI, AsyncAPI, GraphQL, Protobuf, Avro), automated breaking-change detection, and enterprise API catalogs.
 
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+Whether you are standardizing API governance with Git-native workflows, deploying an internal developer portal (IDP), or eliminating breaking schema changes across distributed teams, explore battle-tested tooling below.
 
-## SaaS/Hosted Platforms
+---
 
-- **[Postman API Repository](https://www.postman.com/product/api-repository/)**  
-  Cloud-based, version-controlled centralized repository for all API artifacts; the Private API Network provides a team-visible catalog with hierarchical folders and versioning support for managing multiple API versions [citation:12]. Version tagging links collections, mocks, and monitors to specific API versions, with changelogs and rollback via snapshots [citation:1].
+## 📑 Table of Contents
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Architecture & Best Practices](#️-architecture--best-practices)
+- [📈 Star History](#-star-history)
+- [💖 Support](#-support)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#️-disclaimer)
 
-- **[GitHub Enterprise](https://github.com/enterprise)**  
-  Enterprise-grade Git platform with REST API endpoints for repository management, organization administration, and enterprise controls; supports OpenAPI-based automation and self-hosted GitHub Enterprise Server with `/api/v3` endpoints [citation:2].
+---
 
-- **[GitLab](https://about.gitlab.com/)**  
-  DevOps platform with built-in Git repository management, CI/CD, and API versioning through branches and tags; self-managed and SaaS editions support merge request workflows and protected branches for API specification changes.
+## 📊 Sector Overview & Market Dynamics
 
-- **[SwaggerHub](https://swagger.io/tools/swaggerhub/)**  
-  Hosted API definition repository acting as the source of truth for OpenAPI specifications; supports API version management, team/project organization, reusable domains, and on-premise deployment for enterprise governance [citation:4][citation:15].
+The global API management and developer portal sector is valued between **$8.5 billion and $10.5 billion in 2026**, expanding rapidly at a **18%–22% CAGR** toward an estimated $35+ billion by 2032. 
 
-- **[Bitbucket](https://bitbucket.org/)**  
-  Atlassian's Git repository platform with pull request workflows, branch permissions, and pipeline automation; supports API definition versioning through standard Git branching and tagging strategies.
+The market exhibits **moderate fragmentation**: foundational version control and Git-level artifact storage are dominated by hyperscalers and developer cloud giants (Microsoft/GitHub, AWS, GitLab, Atlassian), while dedicated API contract registries, schema governance engines, and internal developer catalogs represent an active, competitive frontier contested by specialized platforms (Postman, SmartBear/SwaggerHub, Redocly, Roadie) and high-traction open-source ecosystems (Backstage, Buf, Scalar).
 
-- **[Azure Repos](https://azure.microsoft.com/en-us/products/devops/repos/)**  
-  Microsoft's Git repository service within Azure DevOps; supports file history comparison, version-specific downloads via REST API, and integration with Azure Pipelines for API specification validation [citation:6].
+---
 
-- **[AWS CodeCommit](https://aws.amazon.com/codecommit/)**  
-  Managed Git repository service with IAM-based access control, pull requests, and approval rules; supports branch-level versioning for API definitions with encryption at rest [citation:7].
+## ☁️ SaaS & Hosted Platforms
 
-- **[Backstage Catalog (Hosted)](https://backstage.io/)**  
-  Spotify's developer portal framework (CNCF Incubation) with a centralized software catalog for managing APIs, services, and documentation; hosted offerings exist through third-party providers, while the core remains open-source [citation:18][citation:29].
+The following SaaS platforms provide centralized hosting, catalog discovery, contract validation, and lifecycle versioning for APIs and schemas. Sorted descending by company size (valuation / market capitalization / revenue tier).
 
-- **[Redocly Workspaces](https://redocly.com/)**  
-  API registry and documentation platform with version management tied to source branches; supports multiple versions per API, environment variables per version, build history logs, and developer portal integration [citation:9].
+| SaaS Platform | Company Scale (Valuation / Revenue) | Starting Price (Paid Tier) | Free Tier Limits / Trial Limits | Key Capabilities & Artifact Management |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Azure Repos](https://azure.microsoft.com/en-us/products/devops/repos/)** (Microsoft) | ~$3.1 Trillion market cap (Microsoft) | $6.00 / user / month (Basic Plan) | **Free forever for first 5 users**; includes unlimited private Git repos, 2 GiB free Azure Artifacts storage, and 1,800 free CI/CD build minutes/month | Git-based API contract versioning, PR branch policies, file history comparison, and seamless Azure DevOps pipeline validation. |
+| **[AWS CodeCommit](https://aws.amazon.com/codecommit/)** (Amazon AWS) | ~$2.2 Trillion market cap (Amazon) | $1.00 / additional active user / month | **Free forever for first 5 active users/month**; includes 50 GB storage/month, 10,000 Git requests/month, and unlimited repos *(for existing AWS accounts)* | Fully managed Git repository with IAM authorization, encryption at rest, branch protection, and automated code review pipelines for specs. |
+| **[GitHub Enterprise](https://github.com/enterprise)** (Microsoft) | ~$100 Billion+ implied valuation / $4B+ ARR | $21.00 / user / month (Enterprise Cloud) | **Free forever plan available** (Free tier covers unlimited public/private repos, 2,000 Actions minutes/month, 500 MB Packages storage; 30-day free trial for Enterprise) | Enterprise-grade Git repository management, version tagging, OpenAPI automation, Pull Request schema linting, and GitHub Enterprise Server. |
+| **[Bitbucket](https://bitbucket.org/)** (Atlassian) | ~$45 Billion market cap (Atlassian) | $3.00 / user / month (Standard Plan) | **Free forever up to 5 users**; includes unlimited private repositories, 1 GB Git Large File Storage (LFS), and 50 build minutes/month | Branch permission controls, integrated Jira workflows, automated spec linting via Bitbucket Pipelines, and semantic release tagging. |
+| **[GitLab](https://about.gitlab.com/)** | ~$8.5 Billion market cap / $700M+ ARR | $29.00 / user / month (Premium Plan) | **Free forever for 1 user / namespace**; includes 5 GB storage, 10 GB transfer/month, 400 compute minutes/month, and 30-day Ultimate free trial | End-to-end DevSecOps platform with Git repository versioning, protected branches, merge request governance, and CI/CD pipelines for schema diffing. |
+| **[Postman API Repository](https://www.postman.com/product/api-repository/)** | ~$5.6 Billion valuation (Series D) | $9.00 / user / month (Solo, billed annually) | **Free forever for 1 user**; includes 10,000 Postman API calls/month, 100 AI credits, 5 integrations, and unlimited collection runs / mock servers | Centralized repository for all API specs and collections, Private API Network catalog, version tags, changelog tracking, and snapshot rollbacks. |
+| **[SwaggerHub](https://swagger.io/tools/swaggerhub/)** (SmartBear) | ~$2.5 Billion valuation / $300M+ revenue | $19.00 / user / month (Individual Plan) | **Free plan for solo public specs** (basic editor); **14-day free trial** with full access to Team Plan features and mock servers | Central source of truth for OpenAPI & AsyncAPI specifications, reusable domain libraries, team workspaces, automated mocking, and style rule enforcement. |
+| **[Stoplight](https://stoplight.io/)** (SmartBear) | ~$2.5 Billion valuation (SmartBear parent) | $44.00 / month (Basic Plan, 3 users included) | **Free forever for 1 user and 1 project**; includes visual OpenAPI/JSON Schema designer, interactive docs, and mock servers | Collaborative API design workspace with multi-branch Git synchronization, automated changelogs, dependency mapping, and Spectral style governance. |
+| **[Redocly Workspaces](https://redocly.com/)** | ~$50 Million - $100 Million valuation tier | $249.00 / month (Pro Plan, billed annually) | **30-day full-featured free trial**; unlimited team seats, up to 3 projects, custom domains, interactive API docs, and mock servers (no credit card required) | Developer portal and API registry with Git branch-to-version mappings, multi-version spec hosting, role-based access, and automated linting. |
+| **[Roadie Backstage](https://roadie.io/)** | ~$20 Million - $40 Million valuation tier | $24.00 / developer / month (Teams Plan) | **30-day free trial**; full access to hosted Backstage catalog, unlimited catalog entities, core integrations, and managed infrastructure | Fully managed SaaS implementation of Spotify's Backstage; centralized software catalog for microservices, OpenAPI definitions, and TechDocs. |
 
-- **[Stoplight](https://stoplight.io/)**  
-  API design and governance platform with versioning, automatic changelogs, dependency graphs, multi-branch support, and Git sync; offers style guide enforcement and API catalog visibility across projects .
+---
 
-## Open-Source GitHub Projects
+## 💻 Open-Source GitHub Projects
+
+Explore the leading open-source repositories powering developer portals, schema registries, breaking change detectors, and contract linters. Sorted descending by GitHub star count.
 
 - **[Backstage](https://github.com/backstage/backstage)** [![GitHub stars](https://img.shields.io/github/stars/backstage/backstage?style=social&color=white)](https://github.com/backstage/backstage/stargazers)  
-  CNCF Incubation framework for building developer portals with a centralized software catalog (microservices, libraries, APIs, data pipelines); includes Software Templates, TechDocs ("docs like code"), and a rich plugin ecosystem for API discovery and governance.
+  CNCF Incubation framework created by Spotify for building developer portals with a centralized software catalog (microservices, libraries, APIs, data pipelines); includes Software Templates, TechDocs ("docs like code"), and an extensive plugin ecosystem for enterprise API discovery and governance.
 
 - **[Scalar](https://github.com/scalar/scalar)** [![GitHub stars](https://img.shields.io/github/stars/scalar/scalar?style=social&color=white)](https://github.com/scalar/scalar/stargazers)  
-  Modern open-source developer platform and API reference tool with first-class OpenAPI/Swagger support, interactive API clients, and documentation generation.
+  Modern open-source developer platform and API reference tool with first-class OpenAPI/Swagger support, interactive API clients, offline capabilities, and dynamic documentation generation.
 
 - **[Buf](https://github.com/bufbuild/buf)** [![GitHub stars](https://img.shields.io/github/stars/bufbuild/buf?style=social&color=white)](https://github.com/bufbuild/buf/stargazers)  
   Comprehensive tooling for Protocol Buffers including schema registries, backward-compatibility linting, breaking change detection, and centralized module repository management.
 
 - **[APIs-guru/openapi-directory](https://github.com/APIs-guru/openapi-directory)** [![GitHub stars](https://img.shields.io/github/stars/APIs-guru/openapi-directory?style=social&color=white)](https://github.com/APIs-guru/openapi-directory/stargazers)  
-  Community-maintained directory of REST API definitions in OpenAPI 2.0/3.x format, serving as a public reference catalog for API discovery, version tracking, and schema definitions.
+  Community-maintained Wikipedia for Web APIs containing REST definitions in OpenAPI 2.0/3.x format, serving as a public reference catalog for API discovery, version tracking, and schema definitions.
 
 - **[Spectral](https://github.com/stoplightio/spectral)** [![GitHub stars](https://img.shields.io/github/stars/stoplightio/spectral?style=social&color=white)](https://github.com/stoplightio/spectral/stargazers)  
-  Flexible JSON/YAML linter for enforcing API style guides and governance across OpenAPI, AsyncAPI, and JSON Schema specifications in Git-based versioning workflows.
+  Flexible JSON/YAML linter for enforcing API style guides and governance across OpenAPI, AsyncAPI, and JSON Schema specifications within CI/CD and Git-based versioning workflows.
 
 - **[Confluent Schema Registry](https://github.com/confluentinc/schema-registry)** [![GitHub stars](https://img.shields.io/github/stars/confluentinc/schema-registry?style=social&color=white)](https://github.com/confluentinc/schema-registry/stargazers)  
-  Centralized serving layer for schemas, supporting Avro, JSON Schema, and Protobuf with RESTful interfaces for managing versioned schemas and enforcing compatibility checks.
+  Centralized serving layer for schemas, supporting Apache Avro, JSON Schema, and Protobuf with RESTful interfaces for managing versioned schemas, compatibility rules, and Kafka event validation.
 
 - **[GraphQL Inspector](https://github.com/graphql-hive/graphql-inspector)** [![GitHub stars](https://img.shields.io/github/stars/graphql-hive/graphql-inspector?style=social&color=white)](https://github.com/graphql-hive/graphql-inspector/stargazers)  
   Tooling suite for GraphQL schema validation, breaking change detection, schema diffing, and version tracking across Git workflows and deployments.
@@ -99,30 +112,83 @@ Contributions welcome! Open an PR to add/update entries. Keep descriptions factu
 - **[api-versioner](https://github.com/SuperInstance/api-versioner)** [![GitHub stars](https://img.shields.io/github/stars/SuperInstance/api-versioner?style=social&color=white)](https://github.com/SuperInstance/api-versioner/stargazers)  
   Pure Python library for semantic version parsing, deprecation tracking with sunset dates, version-aware routing, and auto-generated migration guides.
 
-### Additional Specifications & Ecosystem Tools
+### 📦 Ecosystem Libraries & Utilities
 
 - **[@docsmyth/hub](https://www.npmjs.com/package/@docsmyth/hub)** — Centralized HTTP service for storing and serving API contracts with immutability guarantees (published versions cannot be overwritten), SHA-256 integrity hashing, and filesystem storage.
-- **Git-based versioning with OpenAPI linting** — Combine tools like Spectral or Vacuum with Git repository branching and tagging for automated spec validation and changelog tracking.
-- **Community API catalogs** — Modular API portals built with Backstage plugins for enterprise service and spec discovery.
-
-**Frameworks for building custom systems**: Combine **Backstage** for the developer portal and software catalog, **Apicurio Registry** for schema and API artifact versioning, and **Git-based workflows** (GitHub/GitLab) for specification review and release tagging—creating a fully self-hosted API governance stack.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- API repositories handling internal specifications must enforce appropriate access controls and comply with organizational security policies.
-- Self-hosted open-source registries require proper backup strategies, access management, and regular compatibility validation as API specifications evolve.
+- **Git-Based OpenAPI CI/CD** — Pair Spectral or Vacuum with Git repository branching and tagging for automated spec validation and changelog tracking.
+- **Enterprise Plugin Portals** — Modular API portals built with Backstage catalog plugins for service and spec discovery.
 
 ---
 
-**Made for API architects, platform engineers, developer experience teams, and organizations building API governance infrastructure.**  
-Let's make API repository and versioning more open, discoverable, and governed.
+## 🛠️ Architecture & Best Practices
+
+Building an enterprise-ready API catalog and versioning layer typically follows a three-tier architecture:
+
+```
++-------------------------------------------------------------------+
+|                    Developer Experience / Catalog                 |
+|   (Backstage Software Catalog / Scalar / Redocly Developer Hub)   |
++-------------------------------------------------------------------+
+                                  │
+                                  ▼
++-------------------------------------------------------------------+
+|                    Central Registry & Schema Store                |
+|      (Apicurio Registry / Confluent Schema Registry / Buf BSR)    |
++-------------------------------------------------------------------+
+                                  │
+                                  ▼
++-------------------------------------------------------------------+
+|                   CI/CD Linting & Breaking Change Diff            |
+|       (Spectral / Vacuum / oasdiff / Optic via GitHub Actions)    |
++-------------------------------------------------------------------+
+```
+
+1. **Treat Specifications as Code**: Store your OpenAPI, AsyncAPI, or Protobuf specifications alongside your service code or in a dedicated centralized schema repository under Git version control.
+2. **Automate Breaking Change Detection**: Block PR merges using `oasdiff` or `optic` when backward-incompatible modifications are detected without an appropriate major version bump.
+3. **Decouple Discovery from Runtime**: Centralize catalog metadata so internal and external developers can discover existing endpoints without needing production infrastructure access.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Centralized-API-Repository-Versioning&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Centralized-API-Repository-Versioning&type=date&legend=top-left)
+
+---
+
+## 💖 Support
+
+Thank you for exploring and utilizing this curated ecosystem! If you find this project valuable, please consider supporting its ongoing maintenance and growth:
+
+- ⭐ **Star the repository** on GitHub to increase visibility.
+- 🍴 **Fork the repo** to contribute new tools, libraries, or architectural patterns.
+- 📢 **Share with your colleagues**, platform teams, and developer communities.
+- ☕ **Sponsor the creator** or buy a coffee via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your backing ensures this guide remains continuously updated with the latest tools, standards, and industry benchmarks!
+
+---
+
+## 🤝 How to Contribute
+
+We welcome community contributions! To add a new platform, library, or update an existing entry:
+
+1. 🍴 **Fork the repository**.
+2. 📝 **Edit `README.md`**:
+   - For SaaS products: include official product link, valuation/market tier, verified starting price, and exact free tier/trial limits.
+   - For open-source tools: include GitHub link, social star badge, and accurate 1–2 sentence description.
+3. 🚀 **Submit a Pull Request** with a concise description of your additions.
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a **community-curated** catalog — inclusion does not represent an endorsement.
+- All company valuations, market capitalizations, and SaaS pricing tiers reflect publicly accessible market data and are subject to change by their respective providers.
+- When hosting internal API contracts and specifications, verify access policies, encryption, and governance controls to protect sensitive internal architectures.
+
+---
+
+<p align="center">
+  <b>Built with ❤️ for API architects, platform engineers, and developer experience teams.</b><br/>
+  <sub>Let's build reliable, discoverable, and forward-compatible API infrastructure.</sub>
+</p>
